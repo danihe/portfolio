@@ -2,5 +2,14 @@
     "name": {
         "first": "Daniel", 
         "last": "Hermansen"
+    }, 
+    "university": {
+        "name": "NTNU", 
+        "degree": "dataingeniør"
+    },
+    "skills": {
+        "languages": ["Python", "C", "C++", "C#", "Java", "Go", "HTML", "CSS"], 
+        "tools": ["Git", "Docker", "Node", "Vim", "Deno", "SSH", "Qemu", "Bun", "Linux", "Excel", "Windows", "Bash"], 
+        "frameworks": ["React", "Astro", "Avalonia"]
     }
 }

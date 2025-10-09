@@ -1,10 +1,10 @@
 ---
-import Skills from '../skills.json';
+import Profile from '../profile.json';
 ---
 <section id="skillset">
     <cloud>
-        {Skills.languages.map(language => <pill> {language} </pill>)}
-        {Skills.tools.map(tool => <pill> {tool} </pill>)}
-        {Skills.frameworks.map(framework => <pill> {framework} </pill>)}
+        {Profile.skills.languages.map(language => <pill> {language} </pill>)}
+        {Profile.skills.tools.map(tool => <pill> {tool} </pill>)}
+        {Profile.skills.frameworks.map(framework => <pill> {framework} </pill>)}
     </cloud>
 </section>
