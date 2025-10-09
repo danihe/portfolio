@@ -2,12 +2,7 @@
 import Skills from '../skills.json';
 ---
 <section id="skillset">
-    <h2> Languages </h2>
-    {Skills.languages.map(language => <p> {language} </p>)}
-
-    <h2> Tools </h2>
-    {Skills.tools.map(tool => <p> {tool} </p>)}
-
-    <h2> Frameworks </h2>
-    {Skills.frameworks.map(framework => <p> {framework} </p>)}
+    {Skills.languages.map(language => <pill> {language} </pill>)}
+    {Skills.tools.map(tool => <pill> {tool} </pill>)}
+    {Skills.frameworks.map(framework => <pill> {framework} </pill>)}
 </section>

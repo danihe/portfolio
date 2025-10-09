@@ -22,3 +22,14 @@ section {
     margin: 1em;
     padding: 1em;
 }
+
+/* ---------------------------------- */
+
+pill {
+    display: inline-block;
+    background: #202020;
+    font: normal 12px/12px Oxanium, sans-serif;
+    border-radius: 32px;
+    padding: 0.25em 1em;
+    margin: 0.25em;
+}
