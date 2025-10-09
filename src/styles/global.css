@@ -25,7 +25,18 @@ section {
 
 /* ---------------------------------- */
 
-pill {
+cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   /* centers the pills horizontally */
+    align-items: center;       /* optional: vertical alignment */
+    text-align: center;
+    max-width: 800px;          /* optional: keeps it from stretching edge-to-edge */
+    margin: 0 auto;            /* centers the whole cloud */
+    padding: 1rem;
+}
+
+cloud > pill {
     display: inline-block;
     background: #202020;
     font: normal 12px/12px Oxanium, sans-serif;
