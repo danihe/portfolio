@@ -4,12 +4,14 @@
         "last": "Hermansen"
     }, 
     "university": {
-        "name": "NTNU", 
-        "degree": "dataingeniør"
+        "name": "NTNU"
     },
     "skills": {
         "languages": ["Python", "C", "C++", "C#", "Java", "Go", "HTML", "CSS"], 
         "tools": ["Git", "Docker", "Node", "Vim", "Deno", "SSH", "Qemu", "Bun", "Linux", "Excel", "Windows", "Bash"], 
         "frameworks": ["React", "Astro", "Avalonia"]
+    }, 
+    "interests": {
+        "hobbies": ["programming", "bodybuilding", "reading", "climbing", "guitar"]
     }
 }
