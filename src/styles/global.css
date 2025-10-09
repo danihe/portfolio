@@ -17,10 +17,33 @@ body {
     padding: 0;
 }
 
+/* ---------------------------------- */
+
 section {
-    background: #101010;
+    display: block;
     margin: 1em;
-    padding: 1em;
+    padding: 0;
+}
+
+section > header {
+    display: block;
+    background: #181818;
+    margin: 0;
+    padding: 0.5em;
+}
+
+section > footer {
+    display: block;
+    background: #181818;
+    margin: 0;
+    padding: 0.5em;
+}
+
+section > content {
+    display: block;
+    background: #101010;
+    margin: 0;
+    padding: 0.5em;
 }
 
 /* ---------------------------------- */
@@ -33,7 +56,7 @@ cloud {
     text-align: center;
     max-width: 800px;          /* optional: keeps it from stretching edge-to-edge */
     margin: 0 auto;            /* centers the whole cloud */
-    padding: 1rem;
+    padding: 0;
 }
 
 cloud > pill {
@@ -43,4 +66,5 @@ cloud > pill {
     border-radius: 32px;
     padding: 0.25em 1em;
     margin: 0.25em;
+    text-transform: lowercase;
 }

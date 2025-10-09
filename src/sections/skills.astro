@@ -2,9 +2,14 @@
 import Profile from '../profile.json';
 ---
 <section id="skills">
-    <cloud>
-        {Profile.skills.languages.map(language => <pill> {language} </pill>)}
-        {Profile.skills.tools.map(tool => <pill> {tool} </pill>)}
-        {Profile.skills.frameworks.map(framework => <pill> {framework} </pill>)}
-    </cloud>
+    <header>
+        Skills
+    </header>
+    <content>
+        <cloud>
+            {Profile.skills.languages.map(language => <pill> {language} </pill>)}
+            {Profile.skills.tools.map(tool => <pill> {tool} </pill>)}
+            {Profile.skills.frameworks.map(framework => <pill> {framework} </pill>)}
+        </cloud>
+    </content>
 </section>
