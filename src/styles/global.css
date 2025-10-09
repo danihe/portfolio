@@ -1,4 +1,6 @@
 body {
+    display: grid;
+    grid: auto / 1fr 1fr 1fr;
     background: #080808;
     margin: 0;
     padding: 0;

@@ -10,8 +10,10 @@ const { title = "Portfolio" } = Astro.props;
         </title>
     </head>
     <body>
+        <aside id="left"></aside>
         <main>
             <slot />
         </main>
+        <aside id="right"></aside>
     </body>
 </html>
