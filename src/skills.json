@@ -1,0 +1,5 @@
+{
+    "languages": ["JavaScript", "TypeScript", "Python", "C", "C++", "Java"], 
+    "tools": ["Git", "Docker", "Node", "Bun", "Vim"], 
+    "frameworks": ["React", "Astro"] 
+}
