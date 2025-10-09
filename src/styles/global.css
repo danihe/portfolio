@@ -1,3 +1,11 @@
 body {
     background: #080808;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background: #101010;
+    margin: 1em;
+    padding: 1em;
 }
