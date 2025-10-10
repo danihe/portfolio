@@ -20,10 +20,14 @@ import Profile from '../profile.json';
                                 </cloud>
                             </div>
                         </summary>
+                        
                         <div id="reflections">
                             <header>
                                 Reflections
                             </header>
+                            <ul>
+                                {project.reflections.map(reflection => <li> {reflection} </li>)}
+                            </ul>
                         </div>
                     </details>
                 )
@@ -33,6 +37,11 @@ import Profile from '../profile.json';
 </section>
 
 <style>
+
+section > content {
+    margin: 0;
+    padding: 0;
+}
 
 list {
     display: block;
@@ -45,10 +54,19 @@ list > details {
     padding: 0;
 }
 
+list > details:hover {
+    cursor: pointer;
+    background: #202020;
+}
+
+list > details[open] {
+    background: #202020;
+}
+
 list > details summary {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 1em;
 }
 
 list > details summary #name {
@@ -61,7 +79,13 @@ list > details summary #skills {
     flex: 0 1 auto;
 }
 
+list > details #description {
+    margin: 0;
+    padding: 1em;
+}
+
 list > details #reflections {
+    background: #181818;
     margin: 0;
     padding: 1em;
 }
