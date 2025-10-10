@@ -12,13 +12,15 @@ import Profile from '../profile.json';
                     <details>
                         <summary>
                             <div id="name">
-                                <a href="#" target="_blank"> {project.name} </a>
+                                {project.name}
                             </div>
+                            <!--
                             <div id="skills">
                                 <cloud>
                                     {project.skills.map(skill => <pill> {skill} </pill>)}
                                 </cloud>
                             </div>
+                            -->
                         </summary>
                         
                         <div id="reflections">
@@ -72,6 +74,7 @@ list > details summary {
 list > details summary #name {
     flex: 1 1 auto;
     padding: 0.25em;
+    font: normal 12px/12px Oxanium, sans-serif;
     text-transform: uppercase;
 }
 
