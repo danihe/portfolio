@@ -27,6 +27,29 @@ body {
 
 /* ---------------------------------- */
 
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0.25em 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+}
+
+/* ---------------------------------- */
+
+ul, ol {
+    margin: 0;
+    padding: 1em 0;
+}
+
+ul, ol > li {
+    margin: 0;
+    padding: 0 2em;
+}
+
+/* ---------------------------------- */
+
 a {
     font: normal 12px/12px Oxanium, sans-serif;
     color: #a65553;
