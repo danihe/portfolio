@@ -17,30 +17,36 @@ import Profile from '../profile.json';
                         </summary>
                         
                         <content>
-                            <h4>
+                            <h5>
                                 Description
-                            </h4>
+                            </h5>
                             {project.description}
 
-                            <h4>
+                            <h5>
                                 Skills
-                            </h4>
-                            <h5>
-                                Hard
                             </h5>
                             <ul>
-                                {project.skills.hard.map(skill => <li> {skill} </li>)}
-                            </ul>
-                            <h5>
-                                Soft 
-                            </h5>
-                            <ul>
-                                {project.skills.soft.map(skill => <li> {skill} </li>)}
+                                <li>
+                                    <h5>
+                                        Hard
+                                    </h5>
+                                    <ul>
+                                        {project.skills.hard.map(skill => <li> {skill} </li>)}
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h5>
+                                        Soft 
+                                    </h5>
+                                    <ul>
+                                        {project.skills.soft.map(skill => <li> {skill} </li>)}
+                                    </ul>
+                                </li>
                             </ul>
 
-                            <h4>
+                            <h5>
                                 Reflection
-                            </h4>
+                            </h5>
                             {project.reflection}
                         </content>
                     </details>
