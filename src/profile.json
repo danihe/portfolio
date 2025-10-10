@@ -18,19 +18,21 @@
     "projects": [
         {
             "name": "robot", 
-            "skills": ["git", "python", "uv", "github"],
             "description": "Collaborative robotics project using LEGO Mindstorms where we as a team built and programmed a line following rover, with emphasis on teamwork and coordination.",
-            "reflections": [
-                "abc", "foo", "bar"
-            ]
+            "skills": {
+                "hard": [], 
+                "soft": []  
+            },
+            "reflections": []
         }, 
         {
             "name": "portfolio", 
-            "skills": ["astro", "git", "node", "github", "npm"],
-            "description": "",
-            "reflections": [
-                "abc", "foo", "bar"
-            ]
+            "description": "My personal portfolio in the form of a website, built using Astro and hosted on GitHub Pages.",
+            "skills": {
+                "hard": [], 
+                "soft": []  
+            },
+            "reflections": []
         }
     ]
 }
