@@ -14,5 +14,15 @@
         "frameworks": ["React", "Astro", "Avalonia"]
     }, 
     "hobbies": ["programming", "bodybuilding", "reading", "climbing", "guitar", "powerlifting", "bouldering", "chess", "longboarding"], 
-    "interests": ["finance", "philosophy", "cryptography", "mathematics", "chemistry", "automation", "low-level programming", "AI", "cybersecurity", "cognitive security"]
+    "interests": ["finance", "philosophy", "cryptography", "mathematics", "chemistry", "automation", "low-level programming", "AI", "cybersecurity", "cognitive security"], 
+    "projects": [
+        {
+            "name": "robot", 
+            "skills": ["git", "python", "uv", "github"]
+        }, 
+        {
+            "name": "portfolio", 
+            "skills": ["astro", "git", "node", "github", "npm"]
+        }
+    ]
 }
