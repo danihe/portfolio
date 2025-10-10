@@ -14,24 +14,37 @@ import Profile from '../profile.json';
                             <div id="name">
                                 {project.name}
                             </div>
-                            <!--
-                            <div id="skills">
-                                <cloud>
-                                    {project.skills.map(skill => <pill> {skill} </pill>)}
-                                </cloud>
-                            </div>
-                            -->
                         </summary>
                         
-                        <div id="reflections">
+                        <content>
+                            <h4>
+                                Description
+                            </h4>
                             {project.description}
-                            <header>
+
+                            <h4>
+                                Skills
+                            </h4>
+                            <h5>
+                                Hard
+                            </h5>
+                            <ul>
+                                {project.skills.hard.map(skill => <li> {skill} </li>)}
+                            </ul>
+                            <h5>
+                                Soft 
+                            </h5>
+                            <ul>
+                                {project.skills.soft.map(skill => <li> {skill} </li>)}
+                            </ul>
+
+                            <h4>
                                 Reflections
-                            </header>
+                            </h4>
                             <ul>
                                 {project.reflections.map(reflection => <li> {reflection} </li>)}
-                            </ul>
-                        </div>
+                            </ul> 
+                        </content>
                     </details>
                 )
             )}
@@ -83,12 +96,8 @@ list > details summary #skills {
     flex: 0 1 auto;
 }
 
-list > details #description {
-    margin: 0;
-    padding: 1em;
-}
-
-list > details #reflections {
+list > details content {
+    display: block;
     background: #181818;
     margin: 0;
     padding: 1em;
