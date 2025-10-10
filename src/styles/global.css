@@ -11,10 +11,26 @@ body {
     display: grid;
     grid: auto / 1fr 1fr 1fr;
     background: #080808;
-    font: normal 14px/14px Oxanium, sans-serif;
+    font: normal 14px/18px Oxanium, sans-serif;
     color: #f8f8f8;
     margin: 0;
     padding: 0;
+}
+
+/* ---------------------------------- */
+
+a {
+    font: normal 12px/12px Oxanium, sans-serif;
+    color: #a65553;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f8f8f8;
+}
+
+a:active {
+    color: #7a3b39;
 }
 
 /* ---------------------------------- */
@@ -64,7 +80,7 @@ cloud {
 
 cloud > pill {
     display: inline-block;
-    background: #202020;
+    background: #a65553;
     font: normal 12px/12px Oxanium, sans-serif;
     border-radius: 32px;
     padding: 0.25em 1em;
