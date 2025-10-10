@@ -1,0 +1,13 @@
+---
+import Profile from '../profile.json';
+---
+<section id="hobbies">
+    <header>
+        Hobbies
+    </header>
+    <content>
+        <cloud>
+            {Profile.hobbies.map(hobby => <pill> {hobby} </pill>)}
+        </cloud>
+    </content>
+</section>
