@@ -6,5 +6,49 @@ import Profile from '../profile.json';
         Projects
     </header>
     <content>
+        <list>
+            {Profile.projects.map(
+                project => (
+                    <entry>
+                        <div id="name">
+                            <a href="#" target="_blank"> {project.name} </a>
+                        </div>
+                        <div id="skills">
+                            <cloud>
+                                {project.skills.map(skill => <pill> {skill} </pill>)}
+                            </cloud>
+                        </div>
+                    </entry>
+                )
+            )}
+        </list>
     </content>
 </section>
+
+<style>
+
+list {
+    display: inline;
+}
+
+list > entry {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+list > entry #name {
+    flex: 0 0 auto;
+    padding: 0.25em;
+    text-transform: uppercase;
+}
+
+list > entry #skills {
+    flex: 1 0 auto;
+}
+
+list > entry #repository {
+    flex: 0 1 auto;
+}
+
+</style>
