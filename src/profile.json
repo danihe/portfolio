@@ -9,7 +9,7 @@
         "name": "NTNU"
     },
     "skills": {
-        "languages": ["python", "c", "c++", "Java", "go", "c#", "html", "css"], 
+        "languages": ["python", "c", "c++", "java", "go", "c#", "html", "css", "latex", "bash", "sql", "js", "ts"], 
         "tools": ["git", "docker", "node", "vim", "deno", "ssh", "qemu", "bun", "linux", "lld", "excel", "npm", "bash", "uv", "clang"], 
         "frameworks": ["react", "astro", "avalonia", "numpy"]
     }, 
@@ -20,19 +20,19 @@
             "name": "robot", 
             "description": "Collaborative robotics project using LEGO Mindstorms where we as a team built and programmed a line following rover, with emphasis on teamwork and coordination.",
             "skills": {
-                "hard": [], 
-                "soft": []  
+                "hard": ["git", "python", "github"],
+                "soft": ["teamwork", "communication", "planning", "coordination", "debugging"]
             },
-            "reflections": []
+            "reflection": "Working with a team on this project improved my ability to communicate technical ideas and iterate quickly under pressure. It also challenged me to be more patient and open-minded when collaborating with others, to great effect. I feel like I've grown a lot as a team member through this experience." 
         }, 
         {
             "name": "portfolio", 
             "description": "My personal portfolio in the form of a website, built using Astro and hosted on GitHub Pages.",
             "skills": {
-                "hard": [], 
-                "soft": []  
+                "hard": ["git", "astro", "css", "html", "github"],
+                "soft": ["planning", "design"]
             },
-            "reflections": []
+            "reflection": "Building this portfolio helped me understand the value of clear structure and maintainable design. I learned to balance simplicity with flexibility and gained a better sense of how to present technical work in a way that’s both accessible and professional without getting lost in the design. Clear and concise was the goal and I feel like I've achieved that." 
         }
     ]
 }
