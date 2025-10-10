@@ -10,16 +10,16 @@
     },
     "skills": {
         "languages": ["python", "c", "c++", "Java", "go", "c#", "html", "css"], 
-        "tools": ["git", "docker", "node", "vim", "deno", "ssh", "qemu", "bun", "linux", "excel", "npm", "bash", "uv"], 
-        "frameworks": ["react", "astro", "avalonia"]
+        "tools": ["git", "docker", "node", "vim", "deno", "ssh", "qemu", "bun", "linux", "lld", "excel", "npm", "bash", "uv", "clang"], 
+        "frameworks": ["react", "astro", "avalonia", "numpy"]
     }, 
     "hobbies": ["programming", "bodybuilding", "reading", "climbing", "guitar", "powerlifting", "bouldering", "chess", "longboarding"], 
-    "interests": ["finance", "philosophy", "cryptography", "mathematics", "chemistry", "automation", "low-level programming", "AI", "cybersecurity", "cognitive security"], 
+    "interests": ["finance", "philosophy", "cryptography", "mathematics", "chemistry", "automation", "low-level programming", "cybersecurity", "neuroscience", "nutrition", "robotics", "drones"], 
     "projects": [
         {
             "name": "robot", 
             "skills": ["git", "python", "uv", "github"],
-            "description": "We built a robot using a LEGO ev3 and programmed it using Python.",
+            "description": "",
             "reflections": [
                 "abc", "foo", "bar"
             ]
@@ -27,7 +27,7 @@
         {
             "name": "portfolio", 
             "skills": ["astro", "git", "node", "github", "npm"],
-            "description": "My personal portfolio.",
+            "description": "",
             "reflections": [
                 "abc", "foo", "bar"
             ]
