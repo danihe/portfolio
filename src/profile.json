@@ -9,9 +9,9 @@
         "name": "NTNU"
     },
     "skills": {
-        "languages": ["Python", "C", "C++", "C#", "Java", "Go", "HTML", "CSS"], 
-        "tools": ["Git", "Docker", "Node", "Vim", "Deno", "SSH", "Qemu", "Bun", "Linux", "Excel", "Windows", "Bash"], 
-        "frameworks": ["React", "Astro", "Avalonia"]
+        "languages": ["python", "c", "c++", "Java", "go", "c#", "html", "css"], 
+        "tools": ["git", "docker", "node", "vim", "deno", "ssh", "qemu", "bun", "linux", "excel", "npm", "bash", "uv"], 
+        "frameworks": ["react", "astro", "avalonia"]
     }, 
     "hobbies": ["programming", "bodybuilding", "reading", "climbing", "guitar", "powerlifting", "bouldering", "chess", "longboarding"], 
     "interests": ["finance", "philosophy", "cryptography", "mathematics", "chemistry", "automation", "low-level programming", "AI", "cybersecurity", "cognitive security"], 
