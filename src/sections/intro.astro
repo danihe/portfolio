@@ -2,5 +2,30 @@
 import Profile from '../profile.json';
 ---
 <section id="intro">
-    {Profile.name.first} {Profile.name.last}
+    <div id="name">
+        {Profile.name.first} {Profile.name.last}
+    </div>
+    <div id="github">
+        <a href="https://github.com/danihe" target="_blank"> GitHub </a>
+    </div>
 </section>
+
+<style>
+
+section {
+    display: flex;
+}
+
+section #name {
+    flex: 1 0 auto;
+    margin: 0;
+    padding: 1em;
+}
+
+section #github {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 1em;
+}
+
+</style>
