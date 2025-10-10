@@ -11,7 +11,7 @@ body {
     display: grid;
     grid: auto / 1fr 1fr 1fr;
     background: #080808;
-    font: normal 16px/16px Oxanium, sans-serif;
+    font: normal 14px/14px Oxanium, sans-serif;
     color: #f8f8f8;
     margin: 0;
     padding: 0;
@@ -28,15 +28,18 @@ section {
 section > header {
     display: block;
     background: #181818;
+    font: normal 12px/12px Oxanium, sans-serif;
     margin: 0;
-    padding: 0.5em;
+    padding: 1em;
+    text-transform: uppercase;
 }
 
 section > footer {
     display: block;
     background: #181818;
     margin: 0;
-    padding: 0.5em;
+    padding: 1em;
+    text-transform: uppercase;
 }
 
 section > content {
