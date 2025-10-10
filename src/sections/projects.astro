@@ -9,16 +9,23 @@ import Profile from '../profile.json';
         <list>
             {Profile.projects.map(
                 project => (
-                    <entry>
-                        <div id="name">
-                            <a href="#" target="_blank"> {project.name} </a>
+                    <details>
+                        <summary>
+                            <div id="name">
+                                <a href="#" target="_blank"> {project.name} </a>
+                            </div>
+                            <div id="skills">
+                                <cloud>
+                                    {project.skills.map(skill => <pill> {skill} </pill>)}
+                                </cloud>
+                            </div>
+                        </summary>
+                        <div id="reflections">
+                            <header>
+                                Reflections
+                            </header>
                         </div>
-                        <div id="skills">
-                            <cloud>
-                                {project.skills.map(skill => <pill> {skill} </pill>)}
-                            </cloud>
-                        </div>
-                    </entry>
+                    </details>
                 )
             )}
         </list>
@@ -28,27 +35,35 @@ import Profile from '../profile.json';
 <style>
 
 list {
-    display: inline;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
-list > entry {
+list > details {
+    margin: 0;
+    padding: 0;
+}
+
+list > details summary {
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-list > entry #name {
-    flex: 0 0 auto;
+list > details summary #name {
+    flex: 1 1 auto;
     padding: 0.25em;
     text-transform: uppercase;
 }
 
-list > entry #skills {
-    flex: 1 0 auto;
+list > details summary #skills {
+    flex: 0 1 auto;
 }
 
-list > entry #repository {
-    flex: 0 1 auto;
+list > details #reflections {
+    margin: 0;
+    padding: 1em;
 }
 
 </style>
