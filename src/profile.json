@@ -4,7 +4,7 @@
         "last": "Hermansen"
     }, 
     "alias": "danihe", 
-    "introduction": "I'm a computer science student at NTNU with a deep passion for programming and technology. I'm especially interested in systems programming, simulation, and automation, with an ambition of working on autonomous weapons and use of artificial intelligence in the context of defense.", 
+    "introduction": "I'm a computer engineering student at NTNU with a passion for programming and technology. I'm especially interested in systems programming, simulation, and automation, with an ambition of working on autonomous weapons and the use of artificial intelligence in the defense industry.", 
     "university": {
         "name": "NTNU"
     },
@@ -19,7 +19,7 @@
         {
             "name": "robot", 
             "skills": ["git", "python", "uv", "github"],
-            "description": "",
+            "description": "Collaborative robotics project using LEGO Mindstorms where we as a team built and programmed a line following rover, with emphasis on teamwork and coordination.",
             "reflections": [
                 "abc", "foo", "bar"
             ]
