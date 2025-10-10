@@ -18,11 +18,19 @@
     "projects": [
         {
             "name": "robot", 
-            "skills": ["git", "python", "uv", "github"]
+            "skills": ["git", "python", "uv", "github"],
+            "description": "We built a robot using a LEGO ev3 and programmed it using Python.",
+            "reflections": [
+                "abc", "foo", "bar"
+            ]
         }, 
         {
             "name": "portfolio", 
-            "skills": ["astro", "git", "node", "github", "npm"]
+            "skills": ["astro", "git", "node", "github", "npm"],
+            "description": "My personal portfolio.",
+            "reflections": [
+                "abc", "foo", "bar"
+            ]
         }
     ]
 }
