@@ -7,7 +7,7 @@ import Profile from '../profile.json';
     </header>
     <content>
         <cloud>
-            {Profile.interests.hobbies.map(hobby => <pill> {hobby} </pill>)}
+            {Profile.interests.map(interest => <pill> {interest} </pill>)}
         </cloud>
     </content>
 </section>

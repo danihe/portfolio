@@ -13,7 +13,6 @@
         "tools": ["Git", "Docker", "Node", "Vim", "Deno", "SSH", "Qemu", "Bun", "Linux", "Excel", "Windows", "Bash"], 
         "frameworks": ["React", "Astro", "Avalonia"]
     }, 
-    "interests": {
-        "hobbies": ["programming", "bodybuilding", "reading", "climbing", "finance", "guitar", "philosophy", "longboarding", "cryptography", "powerlifting", "mathematics", "chess", "chemistry", "physics"]
-    }
+    "hobbies": ["programming", "bodybuilding", "reading", "climbing", "guitar", "powerlifting", "bouldering", "chess", "longboarding"], 
+    "interests": ["finance", "philosophy", "cryptography", "mathematics", "chemistry", "automation", "low-level programming", "AI", "cybersecurity", "cognitive security"]
 }
