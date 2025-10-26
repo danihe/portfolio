@@ -68,13 +68,14 @@ a:active {
 /* ---------------------------------- */
 
 video {
+    overflow: hidden;
     cursor: pointer;
     display: block;
     max-width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
-    filter: grayscale(100);
+    filter: grayscale(100) blur(2px);
     transition: filter 0.5s ease;
 }
 

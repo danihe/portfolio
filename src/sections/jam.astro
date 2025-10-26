@@ -18,6 +18,7 @@ section {
 }
 
 content {
+    overflow: hidden;
     display: flex;
     margin: 0;
     padding: 0;
@@ -38,13 +39,13 @@ content {
     const overlay = document.querySelector('#overlay');
     if(video.paused) {
         overlay.style.background = `rgba(0,0,0,0)`;
-        video.style.filter = `grayscale(0)`;
+        video.style.filter = `grayscale(0) blur(0)`;
         video.play();
         video.muted = false;
     }
     else {
         overlay.style.background = `rgba(0,0,0,0.95)`;
-        video.style.filter = `grayscale(100)`;
+        video.style.filter = `grayscale(100) blur(2px)`;
         video.pause();
         video.muted = true;
     }
