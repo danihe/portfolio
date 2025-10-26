@@ -67,6 +67,50 @@ a:active {
 
 /* ---------------------------------- */
 
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+details {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+}
+
+details > summary {
+    background: #181818;
+    font: normal 12px/12px Oxanium, sans-serif;
+    margin: 0;
+    padding: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+details:open > summary {
+    color: #a65553;
+}
+
+details > summary::marker {
+    color: #d8d8d8;
+}
+
+details:open > summary::marker {
+    color: #a65553;
+}
+
+details > content {
+    display: block;
+    background: #101010;
+    margin: 0;
+    padding: 0.5em 1em;
+}
+
+/* ---------------------------------- */
+
 section {
     display: block;
     margin: 1em;
