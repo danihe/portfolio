@@ -5,8 +5,32 @@ import Profile from '../profile.json';
     <header>
     </header>
     <content>
-        <video controls>
+        <video id="video" muted loop preload="auto">
             <source src="/portfolio/videos/jam.mp4" type="video/mp4" />
         </video>
     </content>
 </section>
+
+<script>
+  const video = document.querySelector('#video');
+  video.load();
+  video.play()
+  .then(() => video.pause())
+  .catch(() => {
+    // Ignore if browser blocks it initially
+  });
+
+  const section = document.querySelector('#jam');
+  section.addEventListener('mouseenter', () => {
+    video.play();
+    video.style.display = 'block';
+  });
+
+  section.addEventListener('mouseleave', () => {
+    video.pause();
+  });
+
+  section.addEventListener('click', () => {
+    video.muted = !video.muted;
+  })
+</script>
