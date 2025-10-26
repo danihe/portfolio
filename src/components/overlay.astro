@@ -1,0 +1,51 @@
+---
+const { id, visible = false } = Astro.props;
+---
+<overlay id={id} class={visible ? "" : "hidden"}>
+    <header class="centered">
+        <slot name="header" />
+    </header>
+    <content class="centered">
+        <slot name="content" />
+    </content>
+    <footer class="centered">
+        <slot name="footer" />
+    </footer>
+</overlay>
+
+<style>
+
+overlay {
+    background: rgba(0, 0, 0, 0.80);
+    display: grid;
+    grid: auto 1fr auto / auto;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    pointer-events: none;
+    transition: background 0.3s ease; 
+}
+
+overlay.hidden {
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease; 
+}
+
+overlay header {
+    pointer-events: none;
+}
+overlay footer {
+    pointer-events: none;
+}
+overlay content {
+    pointer-events: none;
+}
+
+</style>
+
+<script type="module" client:load>
+export function hide() {
+    const element = document.querySelector('overlay');
+    element.classList.toggle('hidden');
+}
+</script>
