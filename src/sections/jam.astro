@@ -22,15 +22,21 @@ import Profile from '../profile.json';
 
   const section = document.querySelector('#jam');
   section.addEventListener('mouseenter', () => {
-    video.play();
-    video.style.display = 'block';
+    //video.play();
   });
 
   section.addEventListener('mouseleave', () => {
-    video.pause();
+    //video.pause();
   });
 
   section.addEventListener('click', () => {
-    video.muted = !video.muted;
+    if(video.paused) {
+        video.play();
+        video.muted = false;
+    }
+    else {
+        video.pause();
+        video.muted = true;
+    }
   })
 </script>
