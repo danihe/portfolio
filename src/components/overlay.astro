@@ -16,7 +16,7 @@ const { id, visible = false } = Astro.props;
 <style>
 
 overlay {
-    background: rgba(0, 0, 0, 0.80);
+    background: rgba(0, 0, 0, 0.90);
     display: grid;
     grid: auto 1fr auto / auto;
     width: inherit;
@@ -38,7 +38,14 @@ overlay footer {
     pointer-events: none;
 }
 overlay content {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    content-align: center;
+    justify-content: center;
+    align-items: center;
     pointer-events: none;
+    transition: background 0.3s ease; 
 }
 
 </style>

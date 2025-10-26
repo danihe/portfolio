@@ -8,7 +8,11 @@ let visible = true;
         <video id="video" muted loop preload="auto">
             <source src="/portfolio/videos/jam.mp4" type="video/mp4" />
         </video>
-        <Overlay id="overlay" visible={visible} />
+        <Overlay id="overlay" visible={visible}>
+            <div slot="content" style="color: #ff2a3a">
+                <img src="/portfolio/icons/film.svg" width="32px" />
+            </div>
+        </Overlay>
     </content>
 </section>
 
@@ -37,15 +41,18 @@ content {
   const section = document.querySelector('#jam');
   section.addEventListener('click', () => {
     const overlay = document.querySelector('#overlay');
+    const content = overlay.querySelector('content');
     if(video.paused) {
         overlay.style.background = `rgba(0,0,0,0)`;
+        content.style.display = 'none';
         video.style.filter = `grayscale(0) blur(0)`;
         video.play();
         video.muted = false;
     }
     else {
-        overlay.style.background = `rgba(0,0,0,0.95)`;
-        video.style.filter = `grayscale(100) blur(2px)`;
+        overlay.style.background = `rgba(0,0,0,0.9)`;
+        content.style.display = 'flex';
+        video.style.filter = `grayscale(100) blur(4px)`;
         video.pause();
         video.muted = true;
     }
