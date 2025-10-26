@@ -5,9 +5,10 @@ let visible = true;
 ---
 <section id="jam">
     <content>
-        <video id="video" muted loop preload="auto">
+        <video id="video" muted preload="auto">
             <source src="/portfolio/videos/jam.mp4" type="video/mp4" />
         </video>
+        <div class="vignette"></div>
         <Overlay id="overlay" visible={visible}>
             <div slot="content" style="color: #ff2a3a">
                 <img src="/portfolio/icons/film.svg" width="32px" />
@@ -17,6 +18,13 @@ let visible = true;
 </section>
 
 <style>
+
+.vignette {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
 
 section {
 }
@@ -30,6 +38,7 @@ content {
     height: 100%;
     position: relative;
     justify-content: center;
+    box-shadow: inset 0 0 100px #000;
 }
 
 </style>
@@ -43,18 +52,18 @@ content {
     const overlay = document.querySelector('#overlay');
     const content = overlay.querySelector('content');
     if(video.paused) {
+        video.play();
+        video.muted = false;
         overlay.style.background = `rgba(0,0,0,0)`;
         content.style.display = 'none';
         video.style.filter = `grayscale(0) blur(0)`;
-        video.play();
-        video.muted = false;
     }
     else {
+        video.pause();
+        video.muted = true;
         overlay.style.background = `rgba(0,0,0,0.9)`;
         content.style.display = 'flex';
         video.style.filter = `grayscale(100) blur(4px)`;
-        video.pause();
-        video.muted = true;
     }
   })
 </script>

@@ -79,7 +79,12 @@ video {
     transition: filter 0.5s ease;
 }
 
-video:paused {
+video:focus {
+    outline: none;
+}
+
+video:active {
+    outline: 1px solid #fff;
 }
 
 details {
