@@ -9,12 +9,13 @@
         "name": "NTNU"
     },
     "skills": {
-        "languages": ["python", "c", "c++", "java", "go", "c#", "html", "css", "latex", "bash", "sql", "js", "ts"], 
-        "tools": ["git", "docker", "node", "vim", "deno", "ssh", "qemu", "bun", "linux", "lld", "excel", "npm", "bash", "uv", "clang"], 
-        "frameworks": ["react", "astro", "avalonia", "numpy"]
+        "languages": ["python", "c", "c++", "java", "go", "c#", "html", "css", "latex", "bash", "sql", "js", "ts", "rust"], 
+        "tools": ["git", "docker", "node", "vim", "deno", "ssh", "qemu", "bun", "linux", "lld", "excel", "npm", "bash", "uv", "clang", "make", "gdb"], 
+        "frameworks": ["react", "astro", "avalonia", "numpy"], 
+        "architectures": ["risc-v", "arm"]
     }, 
     "hobbies": ["programming", "bodybuilding", "reading", "climbing", "guitar", "powerlifting", "bouldering", "chess", "longboarding"], 
-    "interests": ["finance", "philosophy", "cryptography", "mathematics", "chemistry", "automation", "low-level programming", "cybersecurity", "neuroscience", "nutrition", "robotics", "drones"], 
+    "interests": ["finance", "philosophy", "cryptography", "mathematics", "chemistry", "automation", "low-level programming", "cybersecurity", "neuroscience", "nutrition", "robotics", "drones", "emulation", "compilers", "os development", "linux", "risc-v"], 
     "projects": [
         {
             "name": "robot", 
