@@ -1,0 +1,48 @@
+[
+  {
+      "name": "Line-Following Rover", 
+      "overview": "This is a collaborative robotics project where me and a team of other students built and programmed a line following rover, with emphasis on teamwork and coordination, for the course IDATT1004 at NTNU.",
+      "goal": "",
+      "skills": {
+          "hard": ["git", "python", "github"],
+          "soft": ["teamwork", "communication", "planning", "coordination", "debugging"]
+      },
+      "role": "Mainly programming and managing Git/GitHub",
+      "description": [],
+      "reflection": ["Working with a team on this project improved my ability to communicate technical ideas and iterate quickly under pressure. It also challenged me to be more patient and open-minded when collaborating with others, to great effect. I feel like I've grown a lot as a team member through this experience."] 
+  }, 
+  {
+      "name": "portfolio", 
+      "overview": "My personal portfolio in the form of a website, built using Astro and hosted on GitHub Pages. This has initially been developed as a requirement for the course IDATT1004 at NTNU, but I fully intend to develop it further, not just during my studies but hopefully after as well.",
+      "goal": "",
+      "skills": {
+          "hard": ["git", "astro", "css", "html", "github"],
+          "soft": ["planning", "design"]
+      },
+      "role": "I did everything. So everything!",
+      "description": [],
+      "reflection": ["Building this portfolio helped me understand the value of clear structure and maintainable design. I learned to balance simplicity with flexibility and gained a better sense of how to present technical work in a way that’s both accessible and professional without getting lost in the design. Clear and concise was the goal and I feel like I've achieved that."] 
+  },
+  {
+      "name": "semi-autonomous remote-controlled car (semesteroppgave)",
+      "overview": "Me and a team of four other students developed a prototype or proof of concept semi-autonomous electric vehicle for the course IDATT1004 at NTNU. We opted to make a plowtruck specifically for this project, but the stack we developed could in theory be more widely applicable, and we intentioanlly designed it from the ground up to be general and extensible.",
+      "goal": "We chose a project which we thought could serve a real world purpose with sustainability taking center stage. And as it happens, right as we were wrapping up our project, one of our team members stumbled upon a news article which stated that Gardermoen, the biggest airport here in Norway, just mobilized remote controlled and semi-autonomous plowtrucks for clearing snow off the tarmac, citing sustainability as one of the leading motivators for the initiative. This was validating for us, considering that sustainability was one of the core aspects of this project.", 
+      "skills": {
+          "hard": ["git", "uv", "python", "micropython", "github", "gannt", "latex", "go", "react", "bun", "typescript", "material ui", "http"], 
+          "soft": ["teamwork", "communication", "planning", "coordination", "agile"]
+      },
+      "role": "We didn't have clearly defined enough roles, but in practice my role amounted to being responsible for LaTeX and the overall structure of the report, as well as managing GitHub, trying my best to ensure adherence to reasonable Git principles. In addition to this I've worked on most of the codebases, both the robot, the server, and the dashboard. For the backend specifically I bootstrapped the projects and laid the foundation for the workflow, creating the Makefile to ensure ease of use, etc.",
+      "description": [
+        "In more concrete terms we decided to split the project into two logical components, namely server and client. As the client we used an EV3 brick equipped with motors and a sensor, as well as a wifi dongle. For the server we opted for a typical REST-like HTTP server written in Go, equipped with a dashboard written in TypeScript using React, which we bundled with Bun and served statically through the server. In other words this project quickly amounted to a complex but sophisticated piece of machinery.",
+        "We tried our best to coordinate well using the tools and techniques prescribed, but not without mistakes. And these mistakes, and their consequences, were the biggest teachers for me."
+      ],
+      "reflection": [
+        "Personally I've learned a lot, not just during this specific project but throughout the course. I've even had to confront myself and some of my preconceived notions about my ability to work alongside others and my assumptions about the nature of collaboration. I have been forced to reconsider a lot of things I took for granted or believed to be true, and overall this experience has pushed me to become a better collaborator.",
+        "I've learned to appreciate the need for planning, as well as the need for concrete roles and tasks. Before I might have been a proponent of the idea that central leadership was uneccessary. I no longer believe this. After the first project we worked through, I even personally prompted the other team members on several occasions for more clearly defined roles, whereas in the beginning of the semester I was a proponent of leaderless and a flexible structure.",
+        "While the technical aspects of this project were interesting, and while I did learn some things in this regard, these learning outcomes were definitely secondary to the things I described above. I genuinely feel like I'm better equipped to work in teams now that we've concluded.",
+        "As I touched briefly on above, mistakes were made along the way, and these mistakes were the leading reasons that I now appreciate the need for planning and clear communication. These missteps have really underlined the need for the tools and techniques that we've learned about"
+      ],
+      "report": "report.pdf",
+      "repository": "https://git.ntnu.no/IDATT1004-Team20-H2025/project"
+  }
+]

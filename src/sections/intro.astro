@@ -1,17 +1,24 @@
 ---
 import Profile from '../profile.json';
+import Card from '../components/card.astro';
 ---
 <section id="intro">
-    <header>
-        <div id="name">
-            {Profile.name.first} {Profile.name.last}
-        </div>
-        <div id="github">
-            <a href=`https://github.com/${Profile.alias}` target="_blank"> GitHub </a>
-        </div>
-    </header>
+    <Card profile={Profile} />
     <content>
-        {Profile.introduction}
+        <h5> Introduction </h5>
+        <section>
+            {Profile.introduction}
+        </section>
+        <h5> Background </h5>
+        <section>
+            {Profile.background}
+        </section>
+        <h5> Ambition </h5>
+        <section>
+            {
+                Profile.ambitions.map(ambition => <p> {ambition} </p>) 
+            }
+        </section>
     </content>
 </section>
 
@@ -47,7 +54,7 @@ section > content {
     background: #101010;
     margin: 0;
     padding: 2em;
-    text-align: center;
+    text-align: left;
 }
 
 </style>

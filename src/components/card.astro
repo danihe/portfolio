@@ -1,0 +1,73 @@
+---
+const { profile } = Astro.props;
+import Profile from '../profile.json';
+import Image from './image.astro';
+---
+<card>
+  <div id="profile">
+      <div id="identity">
+        <div id="name">
+          {Profile.name.first} {Profile.name.last}
+        </div>
+        <div id="major">
+          {Profile.major.name} @ {Profile.university.name}
+        </div>
+      </div>
+      <div id="links">
+        <a href=`https://github.com/${Profile.alias}` target="_blank"> GitHub </a>
+      </div>
+  </div>
+</card>
+
+<style>
+
+card {
+  display: block;
+  background: none;
+  font: normal 12px/12px Oxanium, sans-serif;
+  width: auto;
+  margin: 0;
+  padding: 1em;
+}
+
+card #profile {
+  display: flex;
+  margin: 0;
+  padding: 1em 2em;
+}
+
+card #profile #identity {
+  flex: 1 0 auto;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+card #profile #identity #name {
+  font: normal 16px/32px Oxanium, sans-serif;
+  color: #a65553;
+}
+
+card #profile #identity #major {
+  font: normal 10px/10px Oxanium, sans-serif;
+  color: #f8f8f8;
+  padding: 0 0.5em;
+}
+
+card #profile #links {
+  flex: 0 1 auto;
+  display: flex;          /* this is the key */
+  margin: 0;
+  padding: 1em;
+  align-items: center;    /* vertical */
+  justify-content: center;/* horizontal */
+  text-transform: uppercase;
+}
+
+card #profile content {
+  display: block;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+</style>

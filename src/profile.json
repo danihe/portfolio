@@ -3,11 +3,20 @@
         "first": "Daniel", 
         "last": "Hermansen"
     }, 
-    "alias": "danihe", 
-    "introduction": "I'm a computer engineering student at NTNU with a passion for programming and technology. I'm especially interested in systems programming, simulation, and automation, with an ambition of working on autonomous weapons and the use of artificial intelligence in the defense industry.", 
     "university": {
         "name": "NTNU"
     },
+    "major": {
+        "name": "Computer Engineering"
+    },
+    "alias": "danihe", 
+    "introduction": "My name is Daniel and I'm currently a computer engineering student at NTNU. I have a passion for analytical problem solving and I enjoy doing deep dives, with an almost insatiable appetite for learning, almost bordering on being an addiction.", 
+    "background": "I've been programming and teaching myself since the 6th grade, and on my journey I've explored everything from low-level programming directly on hardware (emulated in QEMU, actually) to game development and graphics rendering, but my very first foray into development was in web development. I started learning PHP and SQL with the goal of creating a text based browser game. Since then my interests have shifted quite a bit. Now I'm interested in systems programming (in particular decentralized systems), large-scale simulations, and automation.",
+    "ambitions": [
+        "My greatest ambition is to develop great tools for military and defense applications, ideally starting my own company.",
+        "Right now me and a group of close friends have come together as a multi-disciplinary team, with backgrounds ranging from cognitive security and neuroscience, to automation, to visualization, with an ambition of developing a general purpose simulator, which will serve as both a tool on its own as well as the framework for a concrete kit in the form of an immersive and field-deployable drone simulator-kit for the drone pilots. At the time of writing we're in the last leg of an application process with Norwegian Defense and FFI. We've applied for funding to develop our idea, with the final round, in the form of a presentation, coming up shortly.",
+        "And if this doesn't pan out, I would probably enjoy working for a company like Kongsberg or Lockheed Martin."
+    ], 
     "skills": {
         "languages": ["python", "c", "c++", "java", "go", "c#", "html", "css", "latex", "bash", "sql", "js", "ts", "rust"], 
         "tools": ["git", "docker", "node", "vim", "deno", "ssh", "qemu", "bun", "linux", "lld", "excel", "npm", "bash", "uv", "clang", "make", "gdb"], 
@@ -18,8 +27,9 @@
     "interests": ["finance", "philosophy", "cryptography", "mathematics", "chemistry", "automation", "low-level programming", "cybersecurity", "neuroscience", "nutrition", "robotics", "drones", "emulation", "compilers", "os development", "linux", "risc-v"], 
     "projects": [
         {
-            "name": "robot", 
-            "description": "Collaborative robotics project using LEGO Mindstorms where we as a team built and programmed a line following rover, with emphasis on teamwork and coordination.",
+            "name": "Line-Following Rover", 
+            "overview": "This is a collaborative robotics project where me and a team of other students built and programmed a line following rover, with emphasis on teamwork and coordination, for the course IDATT1004 at NTNU.",
+            "goal": "",
             "skills": {
                 "hard": ["git", "python", "github"],
                 "soft": ["teamwork", "communication", "planning", "coordination", "debugging"]
@@ -28,12 +38,23 @@
         }, 
         {
             "name": "portfolio", 
-            "description": "My personal portfolio in the form of a website, built using Astro and hosted on GitHub Pages.",
+            "overview": "My personal portfolio in the form of a website, built using Astro and hosted on GitHub Pages. This has initially been developed as a requirement for the course IDATT1004 at NTNU, but I fully intend to develop it further, not just during my studies but hopefully after as well.",
+            "goal": "",
             "skills": {
                 "hard": ["git", "astro", "css", "html", "github"],
                 "soft": ["planning", "design"]
             },
             "reflection": "Building this portfolio helped me understand the value of clear structure and maintainable design. I learned to balance simplicity with flexibility and gained a better sense of how to present technical work in a way that’s both accessible and professional without getting lost in the design. Clear and concise was the goal and I feel like I've achieved that." 
+        },
+        {
+            "name": "semi-autonomous remote-controlled car (semesteroppgave)",
+            "overview": "Me and a team of four other students developed a prototype or proof of concept semi-autonomous electric vehicle for the course IDATT1004 at NTNU. We opted to make a plowtruck specifically for this project, but the stack we developed could in theory be more widely applicable, and we intentioanlly designed it from the ground up to be general and extensible.",
+            "goal": "We chose a project which we thought could serve a real world purpose with sustainability taking center stage. And as it happens, right as we were wrapping up our project, one of our team members stumbled upon a news article which stated that Gardermoen, the biggest airport here in Norway, just mobilized remote controlled and semi-autonomous plowtrucks for clearing snow off the tarmac, citing sustainability goals. This was validating for us, especially considering that sustainability was one of the core aspects of this project.", 
+            "skills": {
+                "hard": ["git", "uv", "python", "micropython", "github", "gannt", "latex", "go", "react", "bun", "typescript", "material ui", "http"], 
+                "soft": ["teamwork", "communication", "planning", "coordination", "agile"]
+            },
+            "reflection": ""
         }
     ]
 }

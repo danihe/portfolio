@@ -1,5 +1,6 @@
 ---
 import Profile from '../profile.json';
+import Projects from '../configs/projects.json';
 ---
 <section id="projects">
     <header>
@@ -7,7 +8,7 @@ import Profile from '../profile.json';
     </header>
     <content>
         <list>
-            {Profile.projects.map(
+            {Projects.map(
                 project => (
                     <details>
                         <summary>
@@ -18,37 +19,74 @@ import Profile from '../profile.json';
                         
                         <content>
                             <h5>
-                                Description
+                                Overview 
                             </h5>
-                            {project.description}
+                            <section>
+                                {project.overview}
+                            </section>
+
+                            <h5>
+                                Goal
+                            </h5>
+                            <section>
+                                {project.goal}
+                            </section>
+
+                            <h5>
+                                Role
+                            </h5>
+                            <section>
+                                {project.role}
+                            </section>
 
                             <h5>
                                 Skills
                             </h5>
-                            <ul>
-                                <li>
-                                    <h5>
-                                        Hard
-                                    </h5>
-                                    <ul>
-                                        {project.skills.hard.map(skill => <li> {skill} </li>)}
-                                    </ul>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Soft 
-                                    </h5>
-                                    <ul>
-                                        {project.skills.soft.map(skill => <li> {skill} </li>)}
-                                    </ul>
-                                </li>
-                            </ul>
+                            Some of the soft and hard skills which were relevant to the project.
+                            <section>
+                                <ul>
+                                    <li>
+                                        <h5>
+                                            Hard Skills
+                                        </h5>
+                                        <ul>
+                                            {project.skills.hard.map(skill => <li> {skill} </li>)}
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>
+                                            Soft Skills 
+                                        </h5>
+                                        <ul>
+                                            {project.skills.soft.map(skill => <li> {skill} </li>)}
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <h5>
+                                Execution
+                            </h5>
+                            <section>
+                                {project.description.map(description => <p> {description} </p>)}
+                            </section>
 
                             <h5>
                                 Reflection
                             </h5>
-                            {project.reflection}
+                            <section>
+                                {project.reflection.map(reflection => <p> {reflection} </p>)}
+                            </section>
                         </content>
+                        <footer>
+                            <div id="spacer"> </div>
+                            <div id="report">
+                                { project.report && <a href="/portfolio/reports/report.pdf" target="_blank"> Report </a> }
+                            </div>
+                            <div id="repo">
+                                { project.repository && <a href={project.repository} target="_blank"> GitHub </a> }
+                            </div>
+                        </footer>
                     </details>
                 )
             )}
@@ -80,7 +118,7 @@ list > details:hover {
 }
 
 list > details[open] {
-    background: #202020;
+    background: #fff;
 }
 
 list > details summary {
@@ -105,6 +143,28 @@ list > details content {
     background: #181818;
     margin: 0;
     padding: 1em;
+}
+
+list > details footer {
+    display: flex;
+    background: #101010;
+    margin: 0;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+list > details #spacer {
+    flex: 1 0 auto;
+}
+
+list > details #report {
+    flex: 0 1 auto;
+    padding: 0 1em;
+}
+
+list > details #repo {
+    flex: 0 1 auto;
+    padding: 0 1em;
 }
 
 </style>

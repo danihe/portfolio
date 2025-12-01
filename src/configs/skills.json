@@ -1,0 +1,6 @@
+{
+  "languages": ["python", "c", "c++", "java", "go", "c#", "html", "css", "latex", "bash", "sql", "js", "ts", "rust"], 
+  "tools": ["git", "docker", "node", "vim", "deno", "ssh", "qemu", "bun", "linux", "lld", "excel", "npm", "bash", "uv", "clang", "make", "gdb"], 
+  "frameworks": ["react", "astro", "avalonia", "numpy"], 
+  "architectures": ["risc-v", "arm"]
+}

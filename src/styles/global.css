@@ -94,7 +94,7 @@ details {
 }
 
 details > summary {
-    background: #181818;
+    background: #202020;
     font: normal 12px/12px Oxanium, sans-serif;
     margin: 0;
     padding: 1em;
@@ -103,6 +103,7 @@ details > summary {
 }
 
 details:open > summary {
+    background: #282828;
     color: #a65553;
 }
 
@@ -174,4 +175,11 @@ cloud > pill {
     padding: 0.25em 1em;
     margin: 0.25em;
     text-transform: lowercase;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
 }

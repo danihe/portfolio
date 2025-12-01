@@ -1,5 +1,6 @@
 ---
 import Profile from '../profile.json';
+import Skills from '../configs/skills.json';
 ---
 <section id="skills">
     <header>
@@ -7,10 +8,10 @@ import Profile from '../profile.json';
     </header>
     <content>
         <cloud>
-            {Profile.skills.languages.map(language => <pill> {language} </pill>)}
-            {Profile.skills.tools.map(tool => <pill> {tool} </pill>)}
-            {Profile.skills.frameworks.map(framework => <pill> {framework} </pill>)}
-            {Profile.skills.architectures.map(architecture => <pill> {architecture} </pill>)}
+            {Skills.languages.map(language => <pill> {language} </pill>)}
+            {Skills.tools.map(tool => <pill> {tool} </pill>)}
+            {Skills.frameworks.map(framework => <pill> {framework} </pill>)}
+            {Skills.architectures.map(architecture => <pill> {architecture} </pill>)}
         </cloud>
     </content>
 </section>
